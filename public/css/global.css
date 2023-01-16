@@ -1,7 +1,10 @@
 .bg-login{
-    background-color: #31278c;
+    background-image: url("../img/bg-login.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .bg-logo{
-    background-color: #5979a2;
+        background-color: #5979a2;
 }
