@@ -24,3 +24,4 @@ Route::get('/profile', 'ProfileController@index')->name('profile');
 Route::put('/profile', 'ProfileController@update')->name('profile.update');
 
 Route::get('/books', 'BooksController@index')->name('books');
+Route::post('/books', 'BooksController@add')->name('books.add');

@@ -115,7 +115,7 @@
 #51 C:\\Users\\Irvan Maulana\\Data\\my_project\\perpustakaan_pintar_pbo\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #52 C:\\Users\\Irvan Maulana\\Data\\my_project\\perpustakaan_pintar_pbo\\server.php(21): require_once('C:\\\\Users\\\\Irvan ...')
 #53 {main}
-"} 
+"}
 [2023-01-16 07:48:33] local.ERROR: Route [urra] not defined. {"view":{"view":"C:\\Users\\Irvan Maulana\\Data\\my_project\\perpustakaan_pintar_pbo\\resources\\views\\auth\\register.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-1409720717 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#285</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
@@ -239,7 +239,7 @@
 #54 C:\\Users\\Irvan Maulana\\Data\\my_project\\perpustakaan_pintar_pbo\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #55 C:\\Users\\Irvan Maulana\\Data\\my_project\\perpustakaan_pintar_pbo\\server.php(21): require_once('C:\\\\Users\\\\Irvan ...')
 #56 {main}
-"} 
+"}
 [2023-01-16 07:48:53] local.ERROR: Route [verify] not defined. {"view":{"view":"C:\\Users\\Irvan Maulana\\Data\\my_project\\perpustakaan_pintar_pbo\\resources\\views\\auth\\register.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-313969915 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#285</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
@@ -363,7 +363,7 @@
 #54 C:\\Users\\Irvan Maulana\\Data\\my_project\\perpustakaan_pintar_pbo\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #55 C:\\Users\\Irvan Maulana\\Data\\my_project\\perpustakaan_pintar_pbo\\server.php(21): require_once('C:\\\\Users\\\\Irvan ...')
 #56 {main}
-"} 
+"}
 [2023-01-16 07:50:27] local.ERROR: Route [/] not defined. {"view":{"view":"C:\\Users\\Irvan Maulana\\Data\\my_project\\perpustakaan_pintar_pbo\\resources\\views\\auth\\register.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-948530121 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#285</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
@@ -487,7 +487,7 @@
 #54 C:\\Users\\Irvan Maulana\\Data\\my_project\\perpustakaan_pintar_pbo\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #55 C:\\Users\\Irvan Maulana\\Data\\my_project\\perpustakaan_pintar_pbo\\server.php(21): require_once('C:\\\\Users\\\\Irvan ...')
 #56 {main}
-"} 
+"}
 [2023-01-16 07:54:42] local.ERROR: Undefined array key "last_name" {"exception":"[object] (ErrorException(code: 0): Undefined array key \"last_name\" at C:\\Users\\Irvan Maulana\\Data\\my_project\\perpustakaan_pintar_pbo\\app\\Http\\Controllers\\Auth\\RegisterController.php:69)
 [stacktrace]
 #0 C:\\Users\\Irvan Maulana\\Data\\my_project\\perpustakaan_pintar_pbo\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(266): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Undefined array...', 'C:\\\\Users\\\\Irvan ...', 69)
@@ -541,7 +541,7 @@
 #48 C:\\Users\\Irvan Maulana\\Data\\my_project\\perpustakaan_pintar_pbo\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #49 C:\\Users\\Irvan Maulana\\Data\\my_project\\perpustakaan_pintar_pbo\\server.php(21): require_once('C:\\\\Users\\\\Irvan ...')
 #50 {main}
-"} 
+"}
 [2023-01-16 08:29:46] local.ERROR: Route [about] not defined. {"view":{"view":"C:\\Users\\Irvan Maulana\\Data\\my_project\\perpustakaan_pintar_pbo\\resources\\views\\layouts\\admin.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-1053866640 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#287</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
@@ -685,7 +685,7 @@
 #62 C:\\Users\\Irvan Maulana\\Data\\my_project\\perpustakaan_pintar_pbo\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #63 C:\\Users\\Irvan Maulana\\Data\\my_project\\perpustakaan_pintar_pbo\\server.php(21): require_once('C:\\\\Users\\\\Irvan ...')
 #64 {main}
-"} 
+"}
 [2023-01-16 12:42:43] local.ERROR: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it (SQL: select * from `users` where `email` = irvanmaulana0605@gmail.com limit 1) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 2002): SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it (SQL: select * from `users` where `email` = irvanmaulana0605@gmail.com limit 1) at C:\\Users\\Irvan Maulana\\Data\\my_project\\perpustakaan_pintar_pbo\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:760)
 [stacktrace]
 #0 C:\\Users\\Irvan Maulana\\Data\\my_project\\perpustakaan_pintar_pbo\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(720): Illuminate\\Database\\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
@@ -823,7 +823,7 @@
 #68 C:\\Users\\Irvan Maulana\\Data\\my_project\\perpustakaan_pintar_pbo\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #69 C:\\Users\\Irvan Maulana\\Data\\my_project\\perpustakaan_pintar_pbo\\server.php(21): require_once('C:\\\\Users\\\\Irvan ...')
 #70 {main}
-"} 
+"}
 [2023-01-16 12:44:46] local.ERROR: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it (SQL: select * from `users` where `email` = irvanmaulana0605@gmail.com limit 1) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 2002): SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it (SQL: select * from `users` where `email` = irvanmaulana0605@gmail.com limit 1) at C:\\Users\\Irvan Maulana\\Data\\my_project\\perpustakaan_pintar_pbo\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:760)
 [stacktrace]
 #0 C:\\Users\\Irvan Maulana\\Data\\my_project\\perpustakaan_pintar_pbo\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(720): Illuminate\\Database\\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
@@ -961,7 +961,7 @@
 #68 C:\\Users\\Irvan Maulana\\Data\\my_project\\perpustakaan_pintar_pbo\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #69 C:\\Users\\Irvan Maulana\\Data\\my_project\\perpustakaan_pintar_pbo\\server.php(21): require_once('C:\\\\Users\\\\Irvan ...')
 #70 {main}
-"} 
+"}
 [2023-01-16 12:44:58] local.ERROR: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it (SQL: select * from `users` where `email` = irvanmaulana0605@gmail.com limit 1) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 2002): SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it (SQL: select * from `users` where `email` = irvanmaulana0605@gmail.com limit 1) at C:\\Users\\Irvan Maulana\\Data\\my_project\\perpustakaan_pintar_pbo\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:760)
 [stacktrace]
 #0 C:\\Users\\Irvan Maulana\\Data\\my_project\\perpustakaan_pintar_pbo\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(720): Illuminate\\Database\\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
@@ -1099,7 +1099,7 @@
 #68 C:\\Users\\Irvan Maulana\\Data\\my_project\\perpustakaan_pintar_pbo\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #69 C:\\Users\\Irvan Maulana\\Data\\my_project\\perpustakaan_pintar_pbo\\server.php(21): require_once('C:\\\\Users\\\\Irvan ...')
 #70 {main}
-"} 
+"}
 [2023-01-18 07:09:53] local.ERROR: SQLSTATE[42S21]: Column already exists: 1060 Duplicate column name 'title' (SQL: create table `books` (`id` bigint unsigned not null auto_increment primary key, `title` text not null, `title` varchar(255) not null, `title` varchar(255) not null, `author` varchar(255) not null, `publisher` varchar(255) not null, `created_at` timestamp null, `updated_at` timestamp null) default character set utf8mb4 collate 'utf8mb4_unicode_ci') {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42S21): SQLSTATE[42S21]: Column already exists: 1060 Duplicate column name 'title' (SQL: create table `books` (`id` bigint unsigned not null auto_increment primary key, `title` text not null, `title` varchar(255) not null, `title` varchar(255) not null, `author` varchar(255) not null, `publisher` varchar(255) not null, `created_at` timestamp null, `updated_at` timestamp null) default character set utf8mb4 collate 'utf8mb4_unicode_ci') at C:\\Users\\Irvan Maulana\\Data\\my_project\\perpustakaan_pintar_pbo\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:760)
 [stacktrace]
 #0 C:\\Users\\Irvan Maulana\\Data\\my_project\\perpustakaan_pintar_pbo\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(720): Illuminate\\Database\\Connection->runQueryCallback('create table `b...', Array, Object(Closure))
@@ -1197,4 +1197,4 @@
 #44 C:\\Users\\Irvan Maulana\\Data\\my_project\\perpustakaan_pintar_pbo\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(155): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #45 C:\\Users\\Irvan Maulana\\Data\\my_project\\perpustakaan_pintar_pbo\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #46 {main}
-"} 
+"}
