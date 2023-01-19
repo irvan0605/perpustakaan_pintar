@@ -1,6 +1,7 @@
     <?php
 
-use Illuminate\Support\Facades\Route;
+    use Illuminate\Support\Facades\DB;
+    use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,3 +26,8 @@ Route::put('/profile', 'ProfileController@update')->name('profile.update');
 
 Route::get('/books', 'BooksController@index')->name('books');
 Route::post('/books', 'BooksController@add')->name('books.add');
+Route::get('books/{id}', function($id) {
+    return DB::table('books')->where('id', $id)->first();
+});
+Route::get('/books/{id}', 'BooksController@delete')->name('books.delete');
+

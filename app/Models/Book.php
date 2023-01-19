@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Book extends Model
 {
     use HasFactory;
-
+    public $timestamps = true;
     protected $fillable = [
         'image', 'title', 'author', 'publisher'
     ];

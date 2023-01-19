@@ -3,8 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Models\Book;
+use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
+use Illuminate\Http\Client\Response;
 use Illuminate\Support\Facades\Redirect;
 
 class BooksController extends Controller
@@ -33,21 +36,35 @@ class BooksController extends Controller
             'publisher' => 'required',
         ]);
 
-        DB::table('books')->insert(
-            [
-                'image' => $request->image,
-                'title' => $request->title,
-                'author'=>$request->author,
-                'publisher'=>$request->publisher,
-            ]
-        );
+        if($request->meth == 'POST'){
+            DB::table('books')->insert(
+                [
+                    'image' => $request->image,
+                    'title' => $request->title,
+                    'author'=>$request->author,
+                    'publisher'=>$request->publisher,
+                ]
+            );
 
-        return Redirect::back()->with('message','Successful Create Data!');
+            return Redirect::back()->with('message','Successful Create Data!');
+        } else {
+            $user = Book::findOrFail($request->id);
+            $user->image = $request->input('image');
+            $user->title = $request->input('title');
+            $user->author = $request->input('author');
+            $user->publisher = $request->input('publisher');
+            $user->save();
+            return Redirect::back()->with('message','Successful Updated Data!');
+        }
+
+
     }
 
-    public function edit()
+    public function delete($id)
     {
-        $this->mode = 'edit';
+        DB::table('books')->where('id', $id)->delete();
+        return redirect()->route('books')->with('message','Successful Deleted Data!');
     }
+
 
 }

@@ -11,6 +11,8 @@
                 <div class="modal-body">
                     <form method="POST" action="{{ route('books.add') }}" id="form-modal">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                        <input type="hidden" name="id" id="id">
+                        <input type="hidden" name="meth" id="meth">
                         <div class="">
                             <div class="row">
                                 <div class="col-lg-12">
@@ -25,7 +27,7 @@
                                 <div class="col-lg-12">
                                     <div class="form-group focused">
                                         <label class="form-control-label" for="name">Title<span class="small text-danger">*</span></label>
-                                        <input type="text" id="image" class="form-control" name="title" placeholder="Input Title Here">
+                                        <input type="text" id="title" class="form-control" name="title" placeholder="Input Title Here">
                                     </div>
                                 </div>
                             </div>
@@ -34,7 +36,7 @@
                                 <div class="col-lg-12">
                                     <div class="form-group">
                                         <label class="form-control-label" for="email">Author<span class="small text-danger">*</span></label>
-                                        <input type="text" id="email" class="form-control" name="author" placeholder="Input Author Here">
+                                        <input type="text" id="author" class="form-control" name="author" placeholder="Input Author Here">
                                     </div>
                                 </div>
                             </div>
@@ -43,7 +45,7 @@
                                 <div class="col-lg-12">
                                     <div class="form-group">
                                         <label class="form-control-label" for="email">Publisher<span class="small text-danger">*</span></label>
-                                        <input type="text" id="email" class="form-control" name="publisher" placeholder="Input Publisher Here">
+                                        <input type="text" id="publisher" class="form-control" name="publisher" placeholder="Input Publisher Here">
                                     </div>
                                 </div>
                             </div>
@@ -53,15 +55,15 @@
                         <div class="pl-lg-4">
                             <div class="row">
                                 <div class="col text-right">
-                                    <button type="submit" class="btn btn-primary">Add</button>
+                                    <button type="submit" id="btn-submit" class="btn btn-primary">Add</button>
                                 </div>
                             </div>
                         </div>
                     </form>
                 </div>
-                <div class="modal-footer">
-                    <button type="submit" class="btn btn-primary">Add</button>
-                </div>
+<!--                <div class="modal-footer">-->
+<!--                    <button type="submit" class="btn btn-primary">Add</button>-->
+<!--                </div>-->
             </div>
         </div>
     </div>

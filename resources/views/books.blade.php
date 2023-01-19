@@ -45,20 +45,23 @@
                     </thead>
                     <tfoot></tfoot>
                     <tbody>
-                    @foreach ($widget['data'] as $row)
+                    @foreach ($widget['data'] as $index => $row)
                         <tr>
-                            <td>1</td>
+                            <td>{{ $index+1 }}</td>
                             <td>{{ $row->image }}</td>
                             <td>{{ $row->title }}</td>
                             <td>{{ $row->author }}</td>
                             <td>{{ $row->publisher }}</td>
                             <td>
-                                <button type="button" id="edit-book" class="btn btn-primary rounded-circle" style="width: 40px; height: 40px" data-toggle="modal" data-target="#exampleModalCenter">
+                                <button onclick="getID('<?= $row->id ?>')" data-id="{{ $row->id }}" type="button" id="edit-book" class="btn btn-primary rounded-circle" style="width: 40px; height: 40px" data-toggle="modal" data-target="#exampleModalCenter">
                                     <i class="fas fa-edit"></i>
                                 </button>
-                                <button type="button" class="btn btn-danger rounded-circle ml-2" style="width: 40px; height: 40px">
-                                    <i class="fas fa-trash"></i>
-                                </button>
+                                <a href="{{ route('books.delete', $row->id) }}">
+                                    <button type="button" class="btn btn-danger rounded-circle ml-2" style="width: 40px; height: 40px">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                </a>
+
                             </td>
                         </tr>
                     @endforeach
@@ -73,16 +76,32 @@
 </div>
 
 <script>
-    const elModal = document.getElementById('exampleModalLongTitle')
-    const elForm = document.getElementById('form-modal')
     const elAdd = document.getElementById('add-book')
-    const elEdit = document.getElementById('edit-book')
     elAdd.onclick = () => {
-        elModal.innerHTML = "Add Book"
+        $('#exampleModalLongTitle').html("Add Book");
+        $('#btn-submit').html("Add");
+        $('#meth').val("POST");
+        $('#id').val('');
+        $('#image').val('');
+        $('#title').val('');
+        $('#author').val('');
+        $('#publisher').val('');
     }
-    elEdit.onclick = () => {
-        elModal.innerHTML = "Edit Book"
+
+    function getID(id){
+        $.get('books/'+id, function (data) {
+            $('#exampleModalLongTitle').html("Edit Book");
+            $('#btn-submit').html("Update");
+            $('#meth').val("PUT");
+            $('#id').val(data.id);
+            $('#image').val(data.image);
+            $('#title').val(data.title);
+            $('#author').val(data.author);
+            $('#publisher').val(data.publisher);
+        })
     }
+
+
 </script>
 
 @endsection
