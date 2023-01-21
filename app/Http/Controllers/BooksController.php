@@ -36,10 +36,16 @@ class BooksController extends Controller
             'publisher' => 'required',
         ]);
 
-        if($request->meth == 'POST'){
+            $path = '';
+            if ($request->hasFile('image')) {
+                $path = $request->file('image')->store('/img/books');
+            }
+
+
+            if($request->meth == 'POST'){
             DB::table('books')->insert(
                 [
-                    'image' => $request->image,
+                    'image' => $path,
                     'title' => $request->title,
                     'author'=>$request->author,
                     'publisher'=>$request->publisher,

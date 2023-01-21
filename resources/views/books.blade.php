@@ -53,7 +53,9 @@
                     @foreach ($widget['data'] as $index => $row)
                         <tr>
                             <td>{{ $index+1 }}</td>
-                            <td>{{ $row->image }}</td>
+                            <td class="text-center">
+                                <img src="/app/{{ $row->image }}" style="width: 100px" />
+                            </td>
                             <td>{{ $row->title }}</td>
                             <td>{{ $row->author }}</td>
                             <td>{{ $row->publisher }}</td>
@@ -101,11 +103,12 @@
 
     function getID(id){
         $.get('books/'+id, function (data) {
+            console.log(data.image, 'tis data')
             $('#exampleModalLongTitle').html("Edit Book");
             $('#btn-submit').html("Update");
             $('#meth').val("PUT");
             $('#id').val(data.id);
-            $('#image').val(data.image);
+            // $('#image').val(data.image);
             $('#title').val(data.title);
             $('#author').val(data.author);
             $('#publisher').val(data.publisher);

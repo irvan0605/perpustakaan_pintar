@@ -9,7 +9,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form method="POST" action="{{ route('books.add') }}" id="form-modal">
+                    <form method="POST" action="{{ route('books.add') }}" id="form-modal" enctype="multipart/form-data">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
                         <input type="hidden" name="id" id="id">
                         <input type="hidden" name="meth" id="meth">
@@ -17,8 +17,8 @@
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="form-group focused">
-                                        <label class="form-control-label" for="name">Image<span class="small text-danger">*</span></label>
-                                        <input type="text" id="image" class="form-control" name="image" placeholder="Image">
+                                        <label for="exampleFormControlFile1">Image</label>
+                                        <input type="file" class="form-control-file" id="image" name="image">
                                     </div>
                                 </div>
                             </div>
