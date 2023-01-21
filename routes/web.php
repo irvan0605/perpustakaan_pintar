@@ -29,5 +29,5 @@ Route::post('/books', 'BooksController@add')->name('books.add');
 Route::get('books/{id}', function($id) {
     return DB::table('books')->where('id', $id)->first();
 });
-Route::get('/books/{id}', 'BooksController@delete')->name('books.delete');
+Route::delete('/books/{id}', 'BooksController@delete')->name('books.delete');
 

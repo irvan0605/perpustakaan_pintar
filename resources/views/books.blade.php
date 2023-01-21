@@ -21,6 +21,11 @@
     @endif
 
     <div class="">
+        @if (session('message'))
+            <div class="alert alert-success" role="alert">
+                {{ session('message') }}
+            </div>
+        @endif
 
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
@@ -52,16 +57,22 @@
                             <td>{{ $row->title }}</td>
                             <td>{{ $row->author }}</td>
                             <td>{{ $row->publisher }}</td>
-                            <td>
+                            <td class="d-flex ">
                                 <button onclick="getID('<?= $row->id ?>')" data-id="{{ $row->id }}" type="button" id="edit-book" class="btn btn-primary rounded-circle" style="width: 40px; height: 40px" data-toggle="modal" data-target="#exampleModalCenter">
                                     <i class="fas fa-edit"></i>
                                 </button>
-                                <a href="{{ route('books.delete', $row->id) }}">
-                                    <button type="button" class="btn btn-danger rounded-circle ml-2" style="width: 40px; height: 40px">
-                                        <i class="fas fa-trash"></i>
-                                    </button>
-                                </a>
+                                <form method="POST" action="{{ route('books.delete', $row->id) }}">
 
+                                    {{ csrf_field() }}
+                                    {{ method_field('DELETE') }}
+
+                                    <input type="hidden" name="id" value="{{ $row->id }}" />
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-danger rounded-circle ml-2" style="width: 40px; height: 40px">
+                                            <i class="fas fa-trash"></i>
+                                        </button>
+                                    </div>
+                                </form>
                             </td>
                         </tr>
                     @endforeach
