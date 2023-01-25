@@ -30,7 +30,6 @@ class BooksController extends Controller
     public function add(Request $request)
     {
         $request->validate([
-            'image' => 'required',
             'title' => 'required',
             'author' => 'required',
             'publisher' => 'required',
@@ -42,7 +41,7 @@ class BooksController extends Controller
             }
 
 
-            if($request->meth == 'POST'){
+        if($request->meth == 'POST'){
             DB::table('books')->insert(
                 [
                     'image' => $path,
@@ -55,8 +54,11 @@ class BooksController extends Controller
             return Redirect::back()->with('message','Successful Create Data!');
         } else {
             $user = Book::findOrFail($request->id);
-            $user->image = $request->input('image');
-            $user->title = $request->input('title');
+            if ($request->hasFile('image')) {
+                $path = '';
+                $path = $request->file('image')->store('/img/books');
+                $user->image = $path;
+            }
             $user->author = $request->input('author');
             $user->publisher = $request->input('publisher');
             $user->save();
