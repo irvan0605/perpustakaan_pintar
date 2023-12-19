@@ -35,10 +35,10 @@
         <!-- Sidebar - Brand -->
         <a class="sidebar-brand d-flex align-items-center justify-content-center">
             <div class="sidebar-brand-icon">
-                <img src="{{ asset('img/logo-app.png') }}" style="width: 40px">
+                <img src="{{ asset('img/logo.png') }}" style="width: 40px">
             </div>
             <div class="sidebar-brand-text mx-3">
-                PerPin
+                ITTS LIBRARY
             </div>
         </a>
 
