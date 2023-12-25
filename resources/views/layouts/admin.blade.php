@@ -95,16 +95,16 @@
         </div>
 
         <!-- Nav Item - Books -->
-        <li class="nav-item {{ Nav::isRoute('profile') }}">
-            <a class="nav-link py-2" href="{{ route('books') }}">
+        <li class="nav-item {{ Nav::isRoute('form_transactions') }}">
+            <a class="nav-link py-2" href="{{ route('form_transactions') }}">
                 <i class="fas fa-fw fa-receipt"></i>
                 <span>{{ __('Form Peminjaman') }}</span>
             </a>
         </li>
 
         <!-- Nav Item - Books -->
-        <li class="nav-item {{ Nav::isRoute('profile') }}">
-            <a class="nav-link py-2" href="{{ route('books') }}">
+        <li class="nav-item {{ Nav::isRoute('transactions') }}">
+            <a class="nav-link py-2" href="{{ route('transactions') }}">
                 <i class="fas fa-fw fa-list"></i>
                 <span>{{ __('List Peminjaman') }}</span>
             </a>

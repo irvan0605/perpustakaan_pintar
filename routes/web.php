@@ -45,5 +45,12 @@ Route::get('publishers/{id}', function($id) {
 });
 Route::delete('/publishers/{id}', 'PublishersController@delete')->name('publishers.delete');
 
+Route::get('/form_transactions', 'FormTransactionsController@index')->name('form_transactions');
+Route::post('/form_transactions', 'FormTransactionsController@add')->name('form_transactions.add');
+
+Route::get('/transactions', 'TransactionsController@index')->name('transactions');
+
+
+
 
 

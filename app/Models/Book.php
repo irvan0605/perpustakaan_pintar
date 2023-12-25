@@ -10,12 +10,17 @@ class Book extends Model
     use HasFactory;
     public $timestamps = true;
     protected $fillable = [
-        'image', 'title', 'author', 'publisher'
+        'image', 'title', 'author', 'number_of_books', 'publisher_id'
     ];
 
     public function publisher()
     {
         return $this->belongsTo(Publisher::class);
+    }
+
+    public function transaction()
+    {
+        return $this->hasMany(Transaction::class);
     }
 
 }

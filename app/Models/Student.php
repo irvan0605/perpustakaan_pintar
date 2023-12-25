@@ -13,4 +13,9 @@ class Student extends Model
         'nim', 'name', 'study_program', 'class', 'semester'
     ];
 
+    public function transaction()
+    {
+        return $this->hasMany(Transaction::class);
+    }
+
 }
