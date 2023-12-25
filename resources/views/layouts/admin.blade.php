@@ -56,21 +56,68 @@
         <hr class="sidebar-divider">
 
         <!-- Heading -->
-        <div class="sidebar-heading">
-            {{ __('Settings') }}
+        <div class="sidebar-heading mt-2 mb-2">
+            {{ __('Master Data') }}
         </div>
 
         <!-- Nav Item - Books -->
         <li class="nav-item {{ Nav::isRoute('profile') }}">
-            <a class="nav-link" href="{{ route('books') }}">
-                <i class="fas fa-fw fa-book"></i>
-                <span>{{ __('Books') }}</span>
+            <a class="nav-link py-2" href="{{ route('students') }}">
+                <i class="fas fa-fw fa-users"></i>
+                <span>{{ __('Mahasiswa') }}</span>
             </a>
         </li>
 
+        <!-- Nav Item - Books -->
+        <li class="nav-item {{ Nav::isRoute('profile') }}">
+            <a class="nav-link py-2" href="{{ route('books') }}">
+                <i class="fas fa-fw fa-user"></i>
+                <span>{{ __('Penerbit') }}</span>
+            </a>
+        </li>
+
+        <!-- Heading -->
+        <div class="sidebar-heading mt-2 mb-2">
+            {{ __('Katalog Buku') }}
+        </div>
+
+        <!-- Nav Item - Books -->
+        <li class="nav-item {{ Nav::isRoute('profile') }}">
+            <a class="nav-link py-2" href="{{ route('books') }}">
+                <i class="fas fa-fw fa-book"></i>
+                <span>{{ __('Buku') }}</span>
+            </a>
+        </li>
+
+        <!-- Heading -->
+        <div class="sidebar-heading mt-2 mb-2">
+            {{ __('Transaksi') }}
+        </div>
+
+        <!-- Nav Item - Books -->
+        <li class="nav-item {{ Nav::isRoute('profile') }}">
+            <a class="nav-link py-2" href="{{ route('books') }}">
+                <i class="fas fa-fw fa-receipt"></i>
+                <span>{{ __('Form Peminjaman') }}</span>
+            </a>
+        </li>
+
+        <!-- Nav Item - Books -->
+        <li class="nav-item {{ Nav::isRoute('profile') }}">
+            <a class="nav-link py-2" href="{{ route('books') }}">
+                <i class="fas fa-fw fa-list"></i>
+                <span>{{ __('List Peminjaman') }}</span>
+            </a>
+        </li>
+
+        <!-- Heading -->
+        <div class="sidebar-heading mt-2 mb-2">
+            {{ __('Lainnya') }}
+        </div>
+
         <!-- Nav Item - Profile -->
         <li class="nav-item {{ Nav::isRoute('profile') }}">
-            <a class="nav-link" href="{{ route('profile') }}">
+            <a class="nav-link py-2" href="{{ route('profile') }}">
                 <i class="fas fa-fw fa-user"></i>
                 <span>{{ __('Profile') }}</span>
             </a>

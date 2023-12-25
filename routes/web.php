@@ -31,3 +31,12 @@ Route::get('books/{id}', function($id) {
 });
 Route::delete('/books/{id}', 'BooksController@delete')->name('books.delete');
 
+Route::get('/students', 'StudentsController@index')->name('students');
+Route::post('/students', 'StudentsController@add')->name('students.add');
+Route::get('students/{id}', function($id) {
+    return DB::table('students')->where('id', $id)->first();
+});
+Route::delete('/books/{id}', 'StudentsController@delete')->name('students.delete');
+
+
+
