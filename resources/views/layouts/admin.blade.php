@@ -82,7 +82,7 @@
         </div>
 
         <!-- Nav Item - Books -->
-        <li class="nav-item {{ Nav::isRoute('profile') }}">
+        <li class="nav-item {{ Nav::isRoute('books') }}">
             <a class="nav-link py-2" href="{{ route('books') }}">
                 <i class="fas fa-fw fa-book"></i>
                 <span>{{ __('Buku') }}</span>

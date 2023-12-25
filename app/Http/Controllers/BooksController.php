@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Book;
+use App\Models\Publisher;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
@@ -19,9 +20,11 @@ class BooksController extends Controller
     public function index()
     {
         $data = Book::all();
+        $listPublisher = Publisher::all();
 
         $widget = [
             'data' => $data,
+            'listPublisher' => $listPublisher,
         ];
 
         return view('books', compact('widget'));
@@ -47,7 +50,8 @@ class BooksController extends Controller
                     'image' => $path,
                     'title' => $request->title,
                     'author'=>$request->author,
-                    'publisher'=>$request->publisher,
+                    'publisher_id'=>$request->publisher,
+                    'number_of_books'=>$request->number_of_books,
                 ]
             );
 
