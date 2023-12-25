@@ -61,7 +61,7 @@
         </div>
 
         <!-- Nav Item - Books -->
-        <li class="nav-item {{ Nav::isRoute('profile') }}">
+        <li class="nav-item {{ Nav::isRoute('students') }}">
             <a class="nav-link py-2" href="{{ route('students') }}">
                 <i class="fas fa-fw fa-users"></i>
                 <span>{{ __('Mahasiswa') }}</span>
@@ -69,8 +69,8 @@
         </li>
 
         <!-- Nav Item - Books -->
-        <li class="nav-item {{ Nav::isRoute('profile') }}">
-            <a class="nav-link py-2" href="{{ route('books') }}">
+        <li class="nav-item {{ Nav::isRoute('publishers') }}">
+            <a class="nav-link py-2" href="{{ route('publishers') }}">
                 <i class="fas fa-fw fa-user"></i>
                 <span>{{ __('Penerbit') }}</span>
             </a>

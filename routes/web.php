@@ -36,7 +36,14 @@ Route::post('/students', 'StudentsController@add')->name('students.add');
 Route::get('students/{id}', function($id) {
     return DB::table('students')->where('id', $id)->first();
 });
-Route::delete('/books/{id}', 'StudentsController@delete')->name('students.delete');
+Route::delete('/students/{id}', 'StudentsController@delete')->name('students.delete');
+
+Route::get('/publishers', 'PublishersController@index')->name('publishers');
+Route::post('/publishers', 'PublishersController@add')->name('publishers.add');
+Route::get('publishers/{id}', function($id) {
+    return DB::table('publishers')->where('id', $id)->first();
+});
+Route::delete('/publishers/{id}', 'PublishersController@delete')->name('publishers.delete');
 
 
 
