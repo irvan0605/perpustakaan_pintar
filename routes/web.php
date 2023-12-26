@@ -49,6 +49,12 @@ Route::get('/form_transactions', 'FormTransactionsController@index')->name('form
 Route::post('/form_transactions', 'FormTransactionsController@add')->name('form_transactions.add');
 
 Route::get('/transactions', 'TransactionsController@index')->name('transactions');
+Route::put('/transactions', 'TransactionsController@return')->name('transactions.return');
+Route::post('/transactions', 'TransactionsController@extend')->name('transactions.extend');
+Route::get('transactions/{id}', function($id) {
+    return DB::table('transactions')->where('id', $id)->first();
+});
+
 
 
 

@@ -17,6 +17,7 @@ class CreateTransactionsTable extends Migration
             $table->id();
             $table->date('loan_date');
             $table->date('return_date');
+            $table->date('original_return_date')->nullable()->default(null);;
             $table->unsignedBigInteger('student_id');
             $table->unsignedBigInteger('book_id');
             $table->timestamps();

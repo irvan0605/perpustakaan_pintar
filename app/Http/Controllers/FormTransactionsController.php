@@ -45,6 +45,7 @@ class FormTransactionsController extends Controller
                 'book_id' => $request->book,
                 'loan_date'=>$request->loan_date,
                 'return_date'=>$request->return_date,
+                'original_return_date'=> null,
             ]
         );
 
